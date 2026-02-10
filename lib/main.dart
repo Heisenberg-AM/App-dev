@@ -33,7 +33,7 @@ class Homepage extends StatelessWidget {
        ),Spacer(),
        ElevatedButton(onPressed: (){}, child: Row(children: [Icon(Icons.catching_pokemon),Text("Card")],))
        ],
-       backgroundColor: Colors.lightBlue,
+
       ),
      body: Padding(padding: EdgeInsetsGeometry.all(10),child: Column( children: [
 
@@ -42,15 +42,15 @@ class Homepage extends StatelessWidget {
          Text("Hi Alex",style: TextStyle(fontSize: 30,fontWeight:FontWeight.w400) ,),],  ),
    Row( children: [
      Column(
-       children: [Text("Points"),Text("9,539")],
+       children: [Text("Points",style: TextStyle(fontSize: 15),),Text("9,539",style: TextStyle(fontSize: 30),)],
      ),
      Column(
-       children: [Text("Status "),Text("90")],
+       children: [Text("Status ",style: TextStyle(fontSize: 15),),Text("90",style: TextStyle(fontSize: 30),)],
      )
 
    ],)
      ]),
-     ),
+     ),backgroundColor: Colors.white,
     );
   }
 }
